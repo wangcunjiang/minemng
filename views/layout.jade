@@ -4,4 +4,21 @@ html
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    block content
+    
+    nav.header
+          ul.list
+              li.logo
+                  a(href='/') 首页
+              li
+                  a(href='/mines') 矿场汇总
+              li
+                  a(href='/customers') 客户汇总
+              li
+                  a(href='/assets') 资产汇总
+    div.container
+           block content
+           hr
+           footer.footer
+               p
+                   a(href='https://automine.qubtc.com') 智能矿场平台
+                   | @2018
